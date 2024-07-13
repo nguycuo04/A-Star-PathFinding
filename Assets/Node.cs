@@ -15,10 +15,14 @@ public class Node
 
     public Node ( bool _walkable, Vector3 _worldPos, int _gridX, int _gridY)
     {
-        _walkable = walkable;
-        _worldPos = worldPos;
-        _gridX = gridX;
-        _gridY = gridY; 
+        //_walkable = walkable;
+        //_worldPos = worldPos;
+        //_gridX = gridX;
+        //_gridY = gridY; 
+        walkable = _walkable;
+        worldPos = _worldPos;
+        gridX=_gridX;
+        gridY=_gridY;   
     }
 
     public int fCost 
