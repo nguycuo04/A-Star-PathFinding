@@ -60,12 +60,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\ConvertToVector3.cs" />
-    <Compile Include="Assets\Node.cs" />
-    <Compile Include="Assets\GridNode.cs" />
-    <Compile Include="Assets\ZombieMovement.cs" />
-    <Compile Include="Assets\Pathfinding.cs" />
+    <Compile Include="Assets\Script\PlayerController.cs" />
+    <Compile Include="Assets\Script\GridNode.cs" />
+    <Compile Include="Assets\Script\SpawnManager.cs" />
+    <Compile Include="Assets\Script\AgentController.cs" />
+    <Compile Include="Assets\Data\WaveData.cs" />
+    <Compile Include="Assets\Script\FollowPlayer.cs" />
+    <Compile Include="Assets\Script\ConvertToVector3.cs" />
+    <Compile Include="Assets\Script\Pathfinding.cs" />
+    <Compile Include="Assets\Data\EmemyData.cs" />
+    <Compile Include="Assets\Script\ZombieMovement.cs" />
+    <Compile Include="Assets\Script\Node.cs" />
+    <Compile Include="Assets\Script\MoveForward.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\FX Prefabs\Blood\Blood Effect 1.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -940,8 +949,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
@@ -984,8 +1001,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -1002,6 +1027,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="asset-store-tools-editor.csproj">
+      <Project>{0DB0B0DD-5A46-D2FF-9B15-D641382A1305}</Project>
+      <Name>asset-store-tools-editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
