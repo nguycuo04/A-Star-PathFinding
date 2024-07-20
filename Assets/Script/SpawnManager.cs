@@ -16,12 +16,13 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     IEnumerator SpawnTheEnemy()
     {
-    
+        for(int j = 0; j < waveData.NumberOfWave; j++)
+        {
             for (int i = 0; i < waveData.EnemyPrefabs.Length; i++)
             {
                 preFabsIndex = Random.Range(0, waveData.EnemyPrefabs.Length);
@@ -29,5 +30,7 @@ public class SpawnManager : MonoBehaviour
                 Instantiate(waveData.EnemyPrefabs[preFabsIndex], waveData.SpawnPosition[spawnIndex], transform.rotation);
             }
             yield return new WaitForSeconds(waveData.TimeInterval);
+        }
+       
     }
 }

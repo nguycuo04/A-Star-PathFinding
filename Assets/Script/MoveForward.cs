@@ -22,11 +22,12 @@ public class MoveForward : MonoBehaviour
 
     void FireInTheHole()
     {
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime); 
-        //if (transform.position .y > 100 || transform.position .z > 100 || transform .position.z > 100)
-        //{
-        //    Destroy(gameObject); 
-        //}
+       transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime); 
+
+       if ( transform.position.x > 30 || transform.position.x < -30 || transform.position.z > 30 || transform.position.z <-30)
+        {
+           Destroy(gameObject);
+        }
 
     }
 

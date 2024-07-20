@@ -11,17 +11,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform bulletPos; 
     [SerializeField] float bulletSpeed;
-    //[SerializeField] float outOfBoundX = 50.0f ;
-    //[SerializeField] float outOfBoundZ= 50.0f; 
+    [SerializeField] float maxHealth=100;
+    [SerializeField] float takeDamage = 5.0f;
+    [SerializeField] float currentHealth;
+    [SerializeField] bool gameOver = false; 
     private Rigidbody rb;
     private Animator animiationControll;
     [SerializeField] bool isOnGround = false;
-    //public bool onZombieAttach = false; 
 
+    public float MaxHealth => maxHealth;
+    public float CurrentHealth => currentHealth;
+    public bool GameOver => gameOver; 
     
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = maxHealth; 
         rb = GetComponent<Rigidbody>();
         animiationControll = GetComponent<Animator>();
         //bulletPrefab = GetComponent<GameObject>();
@@ -32,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (isOnGround ==true)
+        if (isOnGround ==true && gameOver ==false)
         {
             PlayerMovement();
             PlayerAnimationControll();
@@ -46,6 +51,11 @@ public class PlayerController : MonoBehaviour
         {
             animiationControll.SetTrigger("run");
         }
+
+        if (gameOver == true)
+        {
+            animiationControll.SetTrigger("die");
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -53,6 +63,16 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("ground"))
         {
             isOnGround = true;
+        }
+
+        if (collision.gameObject.CompareTag("zombie"))
+        {
+            currentHealth -= takeDamage; 
+
+            if (currentHealth <0)
+            {
+                gameOver = true; 
+            }
         }
         
     }
@@ -93,11 +113,11 @@ public class PlayerController : MonoBehaviour
         transform.Translate(verticalMove * Time.deltaTime * speed);
         transform.Rotate(Vector3.up * turn);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //    isOnGround = false;
+        //}
 
         if (Input.GetMouseButton(0))
         {

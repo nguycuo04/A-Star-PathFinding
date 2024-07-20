@@ -21,5 +21,10 @@ MonoBehaviour:
   - {fileID: 2588724679798191177, guid: d752d19462905ef4bbfc4ea0422a938d, type: 3}
   spawnPositions:
   - {x: 5, y: 0, z: 10}
+  - {x: 8, y: 0, z: 14}
+  - {x: 2, y: 0, z: 6}
+  - {x: 9, y: 0, z: 9}
+  - {x: 2, y: 0, z: 2}
+  - {x: 20, y: 0, z: 10}
   numberOfWave: 3
   timeInteval: 10
