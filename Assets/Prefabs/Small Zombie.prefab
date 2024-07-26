@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4216138380223675813}
   - component: {fileID: 2600801386791718029}
   - component: {fileID: 1099424142992873183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blood (2)
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -4897,7 +4897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6632813322699864555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-chest
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -4931,7 +4931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5551664451693261044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-forearm.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -4963,7 +4963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3706320941807478152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -4995,7 +4995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4030208228408704793}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-shoulder.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5027,7 +5027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5969851566034847101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5058,7 +5058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9114035004503042158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5090,7 +5090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730847730733229057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5127,7 +5127,7 @@ GameObject:
   - component: {fileID: 6717281953112325984}
   - component: {fileID: 84593093081124028}
   - component: {fileID: -1050217193879441243}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Small Zombie
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5191,8 +5191,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.3983057, z: 1}
-  m_Center: {x: 0, y: 0.6991527, z: -0}
+  m_Size: {x: 1, y: 1.8048979, z: 1}
+  m_Center: {x: 0, y: 0.9958567, z: -0}
 --- !u!54 &6717281953112325984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5266,7 +5266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166072580742349263}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5297,7 +5297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4485874177691092559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5329,7 +5329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7641542446770856311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5361,7 +5361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1565614986691838069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5393,7 +5393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146738271614016100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-foot.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5425,7 +5425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3002048880470642340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5456,7 +5456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4085310947375849562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: root
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5488,7 +5488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394843662562073229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5519,7 +5519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056975186618207011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5550,7 +5550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2592417685868198359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5581,7 +5581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8916025861239885173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5613,7 +5613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3260578645273221080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-shoulder.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5645,7 +5645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5003827921592692999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thigh.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5677,7 +5677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2627977714897290359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5709,7 +5709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329751205063999696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5740,7 +5740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5282964892882625104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-upper_arm.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5772,7 +5772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290950811403357202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5804,7 +5804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139386332465802359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-jaw
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5835,7 +5835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4306954889632613682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5867,7 +5867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563554704538159518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_04.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5899,7 +5899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5375544289975741156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5931,7 +5931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4372656621833962262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rig
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5963,7 +5963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6342838688212396971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -5997,7 +5997,7 @@ GameObject:
   - component: {fileID: 5780639169388144941}
   - component: {fileID: 7116423658818957124}
   - component: {fileID: 3439743439264020380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blood FX
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -10884,7 +10884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6944864713298016565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -10916,7 +10916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411725268547367464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -10947,7 +10947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3739693956166977268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-toe.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -10978,7 +10978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6983615811967528895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_03.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -11009,7 +11009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7871092347153320958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -11041,7 +11041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9052520577042452232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -11073,7 +11073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8486621653687360178}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -11107,7 +11107,7 @@ GameObject:
   - component: {fileID: 6967507820679509830}
   - component: {fileID: 3623154035642770476}
   - component: {fileID: 433491254062626647}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blood (1)
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -15994,7 +15994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1362252194948272934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_ring_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16026,7 +16026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218655096772308425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-shin.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16058,7 +16058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5620764531339875803}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16091,7 +16091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7319354671493214387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-neck
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16123,7 +16123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4127183915092690810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_index_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16155,7 +16155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5629280926460815049}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_01.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16187,7 +16187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5221194700773339520}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-hand.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16222,7 +16222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8662940155434303386}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16255,7 +16255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5573368286715009097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-upper_arm.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16287,7 +16287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7121609732248544855}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-Jaw
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16318,7 +16318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3922448549892680912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16349,7 +16349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5188193686692923150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-spine
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16381,7 +16381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2258013938717997321}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-shin.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16413,7 +16413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7199514735014986535}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-head
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16446,7 +16446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2712740244334333955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_03.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16478,7 +16478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 315373038152493633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-toe.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16509,7 +16509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1279399589985872624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_pinky_02.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16541,7 +16541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554575419558929904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-forearm.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16573,7 +16573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5608734245898240436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thigh.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16605,7 +16605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3751815318123219325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16637,7 +16637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5635244813935450491}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-palm_04.L
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16669,7 +16669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6906140006920898602}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-thumb_02.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16701,7 +16701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5294381050211444217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-hand.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16736,7 +16736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125126679655570545}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-hips
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16771,7 +16771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7887005619284379344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-foot.R
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16804,7 +16804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785422130854638604}
   - component: {fileID: 524253756722344441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZombieMesh
   m_TagString: zombie
   m_Icon: {fileID: 0}
@@ -16941,7 +16941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2699353918262029439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: B-f_middle_01.L
   m_TagString: zombie
   m_Icon: {fileID: 0}

@@ -29,7 +29,10 @@ public class AgentController : MonoBehaviour
         
         if (player.transform.position != null && shotOnTarget !=true)
         {
-            agent.SetDestination(player.transform.position);
+            if (agent.isActiveAndEnabled && agent.isOnNavMesh)
+            {
+                agent.SetDestination(player.transform.position);
+            }
         }
 
       
@@ -60,6 +63,7 @@ public class AgentController : MonoBehaviour
         {
             shotOnTarget = true;
             bloodEffect.Play();
+            agent.enabled = false; 
         }
         Destroy(other.gameObject);
 
@@ -73,7 +77,7 @@ public class AgentController : MonoBehaviour
     IEnumerator WaitBeforeDestroy()
     {
        
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.0f);
         Destroy(gameObject); 
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
 
@@ -47,15 +48,26 @@ public class PlayerController : MonoBehaviour
 
     void PlayerAnimationControll()
     {
-        if (rb.velocity.magnitude>0f)
+        if (rb.velocity.magnitude>0f && isOnGround==true)
         {
             animiationControll.SetTrigger("run");
         }
 
-        if (gameOver == true)
+        if (rb.velocity.magnitude ==0 && isOnGround ==true)
+        {
+            animiationControll.SetTrigger("stop_running");
+        }
+
+        if (gameOver == true && isOnGround ==true)
         {
             animiationControll.SetTrigger("die");
         }
+
+        if (isOnGround == false)
+        {
+            animiationControll.SetTrigger("not_on_ground"); 
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -77,22 +89,6 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    //    if (other.gameObject.CompareTag("zombie"))
-    //    {
-    //        onZombieAttach = true;
-    //    }
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.CompareTag("zombie"))
-    //    {
-    //        onZombieAttach = false;
-    //    }
-    //}
     void ShootOnTargetDetection()
     {
         Ray ray = new Ray(transform.position, transform.forward);
@@ -111,23 +107,16 @@ public class PlayerController : MonoBehaviour
         Vector3 horizontalMove = Vector3.right * horizontal;
         Vector3 verticalMove = Vector3.forward * vertical; 
         transform.Translate(verticalMove * Time.deltaTime * speed);
+        transform.Translate(horizontalMove * Time.deltaTime * speed); 
         transform.Rotate(Vector3.up * turn);
-
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //    isOnGround = false;
-        //}
 
         if (Input.GetMouseButton(0))
         {
             Instantiate(bulletPrefab, bulletPos.position, transform.rotation);
-            //if (bulletPrefab.transform.position.x < -outOfBoundX || bulletPrefab.transform.position.x > outOfBoundX
-            //    || bulletPrefab.transform.position.z < -outOfBoundZ || bulletPrefab.transform.position.z > outOfBoundZ)
-            //    {
-            //        Destroy(gameObject); 
-            //    }
+            animiationControll.SetTrigger("shoot");
         }
+
+        else animiationControll.SetTrigger("stop_shooting");
 
     }    
 }

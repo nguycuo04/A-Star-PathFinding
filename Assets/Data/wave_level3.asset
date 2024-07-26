@@ -61,3 +61,4 @@ MonoBehaviour:
   - {x: 15, y: 0, z: 0}
   numberOfWave: 15
   timeInteval: 5
+  spawnRadius: 1

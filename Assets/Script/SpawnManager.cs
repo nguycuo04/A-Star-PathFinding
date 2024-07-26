@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -25,9 +26,18 @@ public class SpawnManager : MonoBehaviour
         {
             for (int i = 0; i < waveData.EnemyPrefabs.Length; i++)
             {
+                int layerMask = LayerMask.GetMask("unmovable");
                 preFabsIndex = Random.Range(0, waveData.EnemyPrefabs.Length);
                 spawnIndex = Random.Range(0, waveData.SpawnPosition.Length);
-                Instantiate(waveData.EnemyPrefabs[preFabsIndex], waveData.SpawnPosition[spawnIndex], transform.rotation);
+
+                NavMeshHit hit;
+
+                if (NavMesh.SamplePosition(waveData.SpawnPosition[spawnIndex], out hit, waveData.SpawnRadius , NavMesh.AllAreas))
+                {
+                    //if (!Physics.CheckSphere(waveData.SpawnPosition[spawnIndex], waveData.SpawnRadius, layerMask))
+                
+                    Instantiate(waveData.EnemyPrefabs[preFabsIndex], waveData.SpawnPosition[spawnIndex], Quaternion.identity);
+                }
             }
             yield return new WaitForSeconds(waveData.TimeInterval);
         }
